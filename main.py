@@ -148,7 +148,9 @@ def emailClicked():
     quality_result = result.cget("text")
     subject = "Hydromo Water Quality Score"
     message = f"Your water recieved a score of {quality_score}, which is considered to be {quality_result} water quality. \n" \
-              f"\nMake sure check with others in your area!"
+              f"\nBe sure to check with others in your area using this link: https://web-build-sidkumar5.vercel.app \n" \
+              f"\nCheck out StateFarm's phenomenal customer service at this link: https://www.statefarm.com \n" \
+              f"\nHydromo - Drink or Drown\n"
     email_update.send_email(subject, message)
 email_button = Label(root, text="✉︎", fg="#8A919D", bg="#F6F7F9", font=("futura", 37))
 email_button.place(x=80, y=695)
